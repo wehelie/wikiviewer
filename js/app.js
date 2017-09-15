@@ -1,11 +1,13 @@
 const word = document.getElementById('qi');
-
+if (!('fetch' in window)) {
+  console.log('Fetch API not found, try including the polyfill');
+}
 word.addEventListener('keyup', (evt) => {
   const div = $('.content');
   div.html('')
   if (evt.keyCode == 13) {
     const queryString = word.value;
-    const url = `https://en.wikipedia.org/w/api.php?action=opensearch&search=${word.value}&limit=3&namespace=0&format=json`;
+    const url = `https://en.wikipedia.org/w/api.php?action=opensearch&search=${word.value}&limit=4&namespace=0&format=json`;
     const proxyurl = 'https://cors-anywhere.herokuapp.com/';
     fetch(proxyurl + url)
       .then(response => response.json())
@@ -21,7 +23,6 @@ word.addEventListener('keyup', (evt) => {
         const result = JSON.parse(str);
 
         for (var i = 0; i < result.matches.length; i++) {
-          console.log(result)
           const html = `
             <div class="row">
               <div class="col">

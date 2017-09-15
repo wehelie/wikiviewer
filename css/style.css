@@ -4,11 +4,13 @@ body {
 }
 
 h1 {
-  color: whitesmoke;
+  /*color: whitesmoke;*/
 }
 
 .jumbotron {
   margin-top: 10px;
+  margin-bottom: 1px;
+  background: #cddc39;
 }
 
 nav {
@@ -16,16 +18,15 @@ nav {
 }
 
 .navbar-brand {
-  color: white;
   font-weight: 100;
   font-size: 30px;
 }
 
 h1.display-1 {
-  color: black;
+  color: #141414;
 }
 .bg-faded {
-  background: rgba(233, 30, 91, 0.53);
+  background: #cddc39;
 }
 
 .form-control {
@@ -42,9 +43,10 @@ p.card-text {
   font-size: 23px;
   background: rgba(158, 158, 158, 0.14);
   padding: 15px;
+  border-radius: 5px;
 }
 
 mark {
   font-weight: lighter;
-  font-family: Consolas;
+  background: #cddc39;
 }

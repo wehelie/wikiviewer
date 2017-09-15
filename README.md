@@ -1,1 +1,1 @@
-# wikiviewer
+# Wikipedia Search Viewer
