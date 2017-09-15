@@ -10,4 +10,4 @@ The Fetch API is a simple interface for fetching resources. Fetch makes it easie
 - - -
 ![demo](img/demo.gif)
 
-##### [Visit Live Link](https://wehelie.github.iog/wikiviewer/)
+##### [Visit Live Link](https://wehelie.github.io/wikiviewer/)
